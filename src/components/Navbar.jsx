@@ -6,7 +6,9 @@ export default function Navbar() {
     <div>
       <nav className="head">
         <div>
-          <img src="Asset 1.png" alt="" />
+          <a href="#home-wrapper">
+            <img src="Asset 1.png" alt="" />
+          </a>
         </div>
         <ul>
           <li>
@@ -15,7 +17,9 @@ export default function Navbar() {
           <li>
             <a href="#servicios">SERVICIOS</a>
           </li>
-          <li>NOSOTROS</li>
+          <li>
+            <a href="#nosotros">NOSOTROS</a>
+          </li>
           <li>GALERIA</li>
           <li>ZONAS</li>
           <li>CONTACTO</li>

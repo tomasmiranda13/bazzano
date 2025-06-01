@@ -2,6 +2,9 @@ import React from "react";
 import "../styles/home.css";
 import Navbar from "../components/Navbar";
 import Servicios from "../components/Servicios";
+import QualityCard from "../components/QualityCard";
+import History from "../components/History";
+import Footer from "../components/Footer";
 
 export default function () {
   return (
@@ -18,6 +21,33 @@ export default function () {
         </div>
       </div>
       <Servicios id="servicios" />
+      <section id="nosotros">
+        <h2>¿Que nos hace diferentes?</h2>
+        <div className="cards-box">
+          <QualityCard
+            img={"tiempo-icon.svg"}
+            title={"Trabajo rapido"}
+            text={"Servicios ágiles para disfrutar tu jardín al instante."}
+          />
+          <QualityCard
+            img={"compromiso-icon.svg"}
+            title={"Compromiso y Calidad"}
+            text={"Resultados que superan tus expectativas."}
+          />
+          <QualityCard
+            img={"atencion-icon.svg"}
+            title={"Atención Personalizada"}
+            text={"Soluciones a medida que reflejan tu estilo."}
+          />
+          <QualityCard
+            img={"sostenibilidad-icon.svg"}
+            title={"Sontenibilidad"}
+            text={"Prácticas que cuidan el medio ambiente"}
+          />
+        </div>
+      </section>
+      <History />
+      <Footer />
     </div>
   );
 }

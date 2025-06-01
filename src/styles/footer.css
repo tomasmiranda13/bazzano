@@ -1,0 +1,37 @@
+.footer-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 0;
+  background-color: #14423c;
+  color: white;
+}
+.footer-section-wrapper {
+  display: flex;
+  gap: 60px;
+  margin-top: 20px;
+}
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-logo {
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+.footer-img-logo {
+  width: 400px;
+}
+.footer-section h6 {
+  margin: 16px 0;
+}
+.redes-box {
+  display: flex;
+  gap: 10px;
+}
+.footer-img {
+  width: 24px;
+  padding: 0;
+}
