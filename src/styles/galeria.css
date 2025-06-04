@@ -1,0 +1,31 @@
+#galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #14423c;
+  padding-bottom: 40px;
+  margin: 100px 0 40px 0;
+}
+#galeria h2 {
+  margin: 40px 0 0 0;
+}
+.carrusel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.galeria_img {
+  max-height: 200px;
+  min-width: 300px;
+}
+.flecha {
+  background-color: transparent;
+  border: none;
+  margin: 0 20px;
+}
+.icono-galeria {
+  width: 20px;
+}

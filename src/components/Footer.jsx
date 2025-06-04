@@ -16,19 +16,15 @@ export default function Footer() {
         <div className="footer-section">
           <h6>Servicios</h6>
           <div className="footer-service-section">
-            <img src="" alt="" />
             <span>Empresas</span>
           </div>
           <div className="footer-service-section">
-            <img src="" alt="" />
             <span>Mantenimiento</span>
           </div>
           <div className="footer-service-section">
-            <img src="" alt="" />
             <span>Poda de arboles y arbustos</span>
           </div>
           <div className="footer-service-section">
-            <img src="" alt="" />
             <span>Limpieza de terrenos</span>
           </div>
         </div>

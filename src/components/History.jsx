@@ -4,7 +4,7 @@ import "../styles/history.css";
 export default function History() {
   return (
     <div className="history-wrapper">
-      <h2>Cuidamos cada espacio verde con compromiso</h2>
+      <h2>Cuidamos cada espacio verdes con compromiso</h2>
       <div className="section-history">
         <div>
           <img className="history-img" src="historia.jpg" alt="" />

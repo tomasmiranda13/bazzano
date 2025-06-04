@@ -8,6 +8,7 @@
   align-items: center;
 }
 .card-wrapper img {
+  padding-top: 20px;
   height: 45px;
   width: 50px;
 }

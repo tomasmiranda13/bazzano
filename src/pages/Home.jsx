@@ -5,6 +5,8 @@ import Servicios from "../components/Servicios";
 import QualityCard from "../components/QualityCard";
 import History from "../components/History";
 import Footer from "../components/Footer";
+import Galeria from "../components/Galeria";
+import Formulario from "../components/Formulario";
 
 export default function () {
   return (
@@ -22,8 +24,8 @@ export default function () {
       </div>
       <Servicios id="servicios" />
       <section id="nosotros">
-        <h2>¿Que nos hace diferentes?</h2>
         <div className="cards-box">
+          <h2>¿Que nos hace diferentes?</h2>
           <QualityCard
             img={"tiempo-icon.svg"}
             title={"Trabajo rapido"}
@@ -47,6 +49,8 @@ export default function () {
         </div>
       </section>
       <History />
+      <Galeria />
+      <Formulario />
       <Footer />
     </div>
   );

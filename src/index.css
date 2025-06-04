@@ -1,6 +1,8 @@
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
@@ -14,10 +16,11 @@ h1 {
   font-size: 56px;
 }
 h2 {
-  font-size: 40px;
+  font-size: 44px;
+  text-align: center;
 }
 h3 {
-  font-size: 32px;
+  font-size: 36px;
 }
 h6 {
   font-size: 18px;
@@ -26,4 +29,23 @@ h6 {
 a {
   text-decoration: none;
   color: inherit;
+}
+@media (max-width: 428px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 42px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 16px;
+    font-weight: 600;
+  }
 }

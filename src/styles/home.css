@@ -43,6 +43,23 @@ h3 {
 }
 .cards-box {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 80px;
   padding: 20px 0 0 0;
+}
+
+@media (max-width: 715px) {
+  .front-page {
+    height: max-content;
+    padding: 20px 0;
+    background-position: right;
+  }
+  .front-button {
+    margin-top: 10px;
+  }
+  .cards-box {
+    gap: 40px;
+    margin: 0 20px;
+  }
 }
