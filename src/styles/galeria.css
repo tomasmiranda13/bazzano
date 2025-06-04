@@ -15,6 +15,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  padding-top: 20px;
 }
 
 .galeria_img {
@@ -28,4 +29,24 @@
 }
 .icono-galeria {
   width: 20px;
+}
+@media (max-width: 970px) {
+  .display-none {
+    display: none;
+  }
+}
+@media (max-width: 715px) {
+  .galeria_img {
+    max-height: 160px;
+    min-width: 240px;
+  }
+
+  .icono-galeria {
+    width: 10px;
+  }
+}
+@media (max-width: 715px) {
+  .display-none1 {
+    display: none;
+  }
 }

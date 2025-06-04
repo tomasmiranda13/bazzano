@@ -10,7 +10,7 @@ export default function Servicios() {
         <div>
           <img className="service-img" src="bordeadora.jpg" alt="" />
         </div>
-        <div>
+        <div className="items-wrap">
           <ItemService
             img={"empresas-icon.svg"}
             name={"Empresas"}

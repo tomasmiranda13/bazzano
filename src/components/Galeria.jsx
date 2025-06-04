@@ -33,17 +33,17 @@ export default function Galeria() {
             <img className="icono-galeria" src="anterior.svg" alt="" />
           </button>
           <img
-            className="galeria_img"
+            className="galeria_img display-none1"
             src={imagenes[indiceAnterior].url}
             alt={`Imagen ${indice + 1}`}
           />
           <img
-            className="galeria_img"
+            className="galeria_img "
             src={imagenes[indice].url}
             alt={`Imagen ${indice + 1}`}
           />
           <img
-            className="galeria_img"
+            className="galeria_img display-none"
             src={imagenes[indiceSiguiente].url}
             alt={`Imagen ${indice + 1}`}
           />

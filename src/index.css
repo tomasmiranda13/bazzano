@@ -30,6 +30,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 @media (max-width: 428px) {
   h2 {
     font-size: 32px;

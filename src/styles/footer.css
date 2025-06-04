@@ -51,4 +51,7 @@
     flex-direction: column;
     text-align: center;
   }
+  .footer-img-logo {
+    width: 300px;
+  }
 }

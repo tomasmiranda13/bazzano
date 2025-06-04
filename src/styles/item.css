@@ -20,3 +20,24 @@
   width: 360px;
   font-size: 12px;
 }
+@media (max-width: 970px) {
+
+  .item-service {
+    width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+      padding: 10px 0;
+    }
+     .text-box {
+      margin: 10px auto 20px auto;
+      width: 200px;
+    }
+  }
+  @media (max-width: 428px) {
+   
+   
+  }
+}

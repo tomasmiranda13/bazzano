@@ -24,8 +24,8 @@ export default function () {
       </div>
       <Servicios id="servicios" />
       <section id="nosotros">
+        <h2>¿Que nos hace diferentes?</h2>
         <div className="cards-box">
-          <h2>¿Que nos hace diferentes?</h2>
           <QualityCard
             img={"tiempo-icon.svg"}
             title={"Trabajo rapido"}
