@@ -34,7 +34,6 @@ export default function Empresas() {
                 <span>Sostenibilidad en cada intervención</span>
               </div>
             </div>
-            s
           </div>
         </div>
       </div>
