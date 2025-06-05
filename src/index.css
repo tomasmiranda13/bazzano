@@ -3,9 +3,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
+  width: 100vw;
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
+  margin: 0 auto;
 }
 * {
   font-family: "Montserrat", sans-serif;

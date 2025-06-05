@@ -1,30 +1,34 @@
 import React from "react";
 import "../styles/navbar.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+  const navegate = useNavigate();
   const [menuAbierto, setMenuAbierto] = useState(false);
 
+  const handleClick = (ruta) => {
+    navegate(ruta);
+    setMenuAbierto(false);
+  };
   const toggleMenu = () => setMenuAbierto(!menuAbierto);
   return (
     <div>
       <head className="head">
         <div>
-          <a href="#home-wrapper">
-            <img src="Asset 1.png" alt="" />
-          </a>
+          <img src="Asset 1.png" alt="" />
         </div>
         <nav className={`nav-links ${menuAbierto ? "activo" : ""}`}>
-          <a href="#home-wrapper">INICIO</a>
+          <span onClick={() => handleClick("/#home")}>INICIO</span>
 
-          <a href="#servicios">SERVICIOS</a>
+          <span onClick={() => handleClick("/#servicios")}>SERVICIOS</span>
 
-          <a href="#nosotros">NOSOTROS</a>
+          <span onClick={() => handleClick("/nosotros")}>NOSOTROS</span>
+          <span onClick={() => handleClick("/#zonas")}>ZONAS</span>
 
-          <a href="#galeria">GALERIA</a>
+          <span onClick={() => handleClick("/#galeria")}>GALERIA</span>
 
-          <a href="">ZONAS</a>
-          <a href="">CONTACTO</a>
+          <span onClick={() => handleClick("/#contactanos")}>CONTACTO</span>
         </nav>
         <button className="hamburguesa" onClick={toggleMenu}>
           ☰

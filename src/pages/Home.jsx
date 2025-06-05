@@ -1,16 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/home.css";
 import Navbar from "../components/Navbar";
 import Servicios from "../components/Servicios";
 import QualityCard from "../components/QualityCard";
-import History from "../components/History";
+import History from "./History";
 import Footer from "../components/Footer";
 import Galeria from "../components/Galeria";
 import Formulario from "../components/Formulario";
+import Zonas from "../components/Zonas";
+import { useLocation } from "react-router-dom";
 
 export default function () {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
-    <div id="home-wrapper">
+    <div id="home">
       <Navbar />
       <div className="front-page">
         <div className="head-box">
@@ -48,7 +61,7 @@ export default function () {
           />
         </div>
       </section>
-      <History />
+      <Zonas />
       <Galeria />
       <Formulario />
       <Footer />

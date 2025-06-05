@@ -12,6 +12,7 @@ export default function Servicios() {
         </div>
         <div className="items-wrap">
           <ItemService
+            ruta={"/empresas"}
             img={"empresas-icon.svg"}
             name={"Empresas"}
             text={

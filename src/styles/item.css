@@ -2,18 +2,20 @@
   padding: 0 0 10px 60px;
   display: flex;
   align-items: flex-start;
+  cursor: pointer;
 }
 
 .item-service {
   display: flex;
   flex-direction: row;
+  padding-bottom: 28px;
 }
 .icon-image {
   width: 50px;
   padding-right: 20px;
 }
 .title-service {
-  padding: 20px 0 0 0;
+  padding: 0px 0 0 0;
   margin: 0;
 }
 .text-box {
@@ -33,6 +35,9 @@
   .text-box {
     margin: 10px auto 20px auto;
     width: 200px;
+  }
+  .icon-image {
+    padding-right: 0;
   }
 }
 @media (max-width: 428px) {

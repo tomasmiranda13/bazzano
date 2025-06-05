@@ -1,9 +1,9 @@
-#home-wrapper {
+#home {
   overflow-x: hidden;
   width: 100vw;
 }
 .front-page {
-  background-image: url("../../public/portada.jpg");
+  background-image: url("../../public/portada_bocet.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -39,7 +39,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 0;
+  padding: 20px 0 0 0;
 }
 .cards-box {
   display: flex;
