@@ -2,12 +2,14 @@ import React from "react";
 import "../styles/empresas.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 export default function Empresas() {
   return (
-    <div>
+    <div className="empresas-wrapper">
+      <ScrollToTop />
       <Navbar />
-      <div className="empresas-wrapper">
+      <div id="empresas">
         <h2>Servicio para empresas</h2>
         <div className="section-empresas">
           <div>

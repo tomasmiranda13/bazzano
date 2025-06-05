@@ -2,10 +2,12 @@ import React from "react";
 import "../styles/history.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 export default function History() {
   return (
     <div>
+      <ScrollToTop />
       <Navbar />
       <div className="history-wrapper">
         <h2>Cuidamos cada espacio verdes con compromiso</h2>
