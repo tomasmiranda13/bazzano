@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
-  margin: 0;
+  margin: 40px 0 0 0;
   background-color: #14423c;
   color: white;
 }
@@ -36,6 +36,10 @@
 .footer-img {
   width: 24px;
   padding: 0;
+}
+.footer-service-section {
+  cursor: pointer;
+  padding: 5px 0;
 }
 
 @media (max-width: 715px) {

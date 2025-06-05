@@ -1,3 +1,8 @@
+.empresas-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 #empresas {
   display: flex;
   flex-direction: column;
@@ -5,6 +10,7 @@
   margin: 100px 0 60px 0;
   width: 100vw;
   overflow-x: hidden;
+  flex: 1;
 }
 .section-empresas {
   display: flex;

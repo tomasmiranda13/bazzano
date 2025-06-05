@@ -34,6 +34,10 @@ h3 {
   border: 3px solid white;
   color: white;
   margin-top: 40px;
+  cursor: pointer;
+}
+.front-button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 #nosotros {
   display: flex;

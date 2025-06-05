@@ -9,9 +9,15 @@ import Galeria from "../components/Galeria";
 import Formulario from "../components/Formulario";
 import Zonas from "../components/Zonas";
 import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function () {
   const location = useLocation();
+  const navegate = useNavigate();
+  const handleClick = (ruta) => {
+    navegate(ruta);
+    setMenuAbierto(false);
+  };
 
   useEffect(() => {
     if (location.hash) {
@@ -32,7 +38,12 @@ export default function () {
             verdes
           </h1>
           <h3>Calidad y eficacia en jardineria</h3>
-          <button className="front-button">SOLICITAR PRESUPUESTO</button>
+          <button
+            onClick={() => handleClick("/#contactanos")}
+            className="front-button"
+          >
+            SOLICITAR PRESUPUESTO
+          </button>
         </div>
       </div>
       <Servicios id="servicios" />
