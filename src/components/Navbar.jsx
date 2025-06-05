@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/navbar.css";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const navegate = useNavigate();
@@ -19,16 +19,28 @@ export default function Navbar() {
           <img src="Asset 1.png" alt="" />
         </div>
         <nav className={`nav-links ${menuAbierto ? "activo" : ""}`}>
-          <span onClick={() => handleClick("/#home")}>INICIO</span>
+          <NavLink className={"link-nav"} to="/#home">
+            INICIO
+          </NavLink>
 
-          <span onClick={() => handleClick("/#servicios")}>SERVICIOS</span>
+          <NavLink className={"link-nav"} to="/#servicios">
+            SERVICIOS
+          </NavLink>
 
-          <span onClick={() => handleClick("/nosotros")}>NOSOTROS</span>
-          <span onClick={() => handleClick("/#zonas")}>ZONAS</span>
+          <NavLink className={"link-nav"} to="/nosotros">
+            NOSOTROS
+          </NavLink>
+          <NavLink className={"link-nav"} to="/#zonas">
+            ZONAS
+          </NavLink>
 
-          <span onClick={() => handleClick("/#galeria")}>GALERIA</span>
+          <NavLink className={"link-nav"} to="/#galeria">
+            GALERIA
+          </NavLink>
 
-          <span onClick={() => handleClick("/#contactanos")}>CONTACTO</span>
+          <NavLink className={"link-nav"} to="/#contactanos">
+            CONTACTO
+          </NavLink>
         </nav>
         <button className="hamburguesa" onClick={toggleMenu}>
           ☰

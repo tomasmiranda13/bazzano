@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="footer-section">
           <h6>Servicios</h6>
           <div className="footer-service-section">
-            <span onClick={() => handleClick("/nosotros")}>Empresas</span>
+            <span onClick={() => handleClick("/empresas")}>Empresas</span>
           </div>
           <div className="footer-service-section">
             <span>Mantenimiento</span>
