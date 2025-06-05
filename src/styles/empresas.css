@@ -42,6 +42,7 @@
 .tic-box {
   display: flex;
   gap: 10px;
+  text-align: left;
 }
 @media (max-width: 970px) {
   .section-empresas {
