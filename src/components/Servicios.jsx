@@ -1,16 +1,44 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../styles/servicios.css";
 import ItemService from "./ItemService";
 
 export default function Servicios() {
+  const ref = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          setVisible(entry.isIntersecting);
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (ref.current) observer.observe(ref.current);
+
+    return () => {
+      if (ref.current) observer.unobserve(ref.current);
+    };
+  }, []);
   return (
     <div id="servicios">
-      <h2>Transformamos espacios con dedicación</h2>
+      <h2> Transformamos espacios con dedicación</h2>
       <div className="sections-services">
         <div>
-          <img className="service-img" src="bordeadora.jpg" alt="" />
+          <img
+            ref={ref}
+            className={`service-img animar ${visible ? "visible" : ""}`}
+            src="bordeadora.jpg"
+            alt=""
+          />
         </div>
-        <div className="items-wrap">
+        <div
+          className={`items-wrap service-img animar-der ${
+            visible ? "visible" : ""
+          }`}
+        >
           <ItemService
             ruta={"/empresas"}
             img={"empresas-icon.svg"}
