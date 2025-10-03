@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "emailjs-com";
 import "../styles/formulario.css";
 
 function Formulario() {
@@ -8,6 +9,8 @@ function Formulario() {
     mensaje: "",
   });
 
+  const formRef = useRef();
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -15,11 +18,20 @@ function Formulario() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Acá podrías integrar con un servicio externo
-    console.log("Consulta enviada:", formData);
-
-    alert("¡Consulta enviada con éxito!");
-    setFormData({ nombre: "", correo: "", mensaje: "" });
+    emailjs
+      .sendForm(
+        "service_ter6lcf", // 👉 Copiar de EmailJS
+        "template_lvgd3qx", // 👉 Copiar de EmailJS
+        formRef.current,
+        "XEG644dZlDM--Gpw4" // 👉 Copiar de EmailJS
+      )
+      .then(() => {
+        alert("¡Consulta enviada con éxito! ✅");
+        setFormData({ nombre: "", correo: "", mensaje: "" });
+      })
+      .catch((error) => {
+        alert("Error al enviar ❌ " + error.text);
+      });
   };
 
   return (
@@ -28,7 +40,7 @@ function Formulario() {
         Contactanos y lleva tus <br />
         espacios verdes al siguiente nivel
       </h2>
-      <form className="formulario" onSubmit={handleSubmit}>
+      <form ref={formRef} className="formulario" onSubmit={handleSubmit}>
         <label>Nombre</label>
         <input
           type="text"

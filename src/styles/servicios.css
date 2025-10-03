@@ -42,4 +42,20 @@
     align-items: center;
     justify-content: center;
   }
+  .animar {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    width: 200px;
+  }
+  .animar-der {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .animar.visible,
+  .animar-der.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

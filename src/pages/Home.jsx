@@ -10,6 +10,7 @@ import Formulario from "../components/Formulario";
 import Zonas from "../components/Zonas";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import WhatsAppButton from "../components/WhatsappButton";
 
 export default function () {
   const location = useLocation();
@@ -31,6 +32,7 @@ export default function () {
   return (
     <div id="home">
       <Navbar />
+      <WhatsAppButton />
       <div className="front-page">
         <div className="head-box">
           <h1>
@@ -72,6 +74,7 @@ export default function () {
           />
         </div>
       </section>
+
       <Zonas />
       <Galeria />
       <Formulario />
