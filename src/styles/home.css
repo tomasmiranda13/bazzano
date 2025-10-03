@@ -21,6 +21,7 @@
 .head-box h1,
 h3 {
   color: white;
+  text-shadow: 1px 1px 6px rgb(46, 45, 45);
 }
 .head-box h3 {
   margin: 20px 0 60px 0;
