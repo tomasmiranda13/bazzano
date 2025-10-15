@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="footer-section">
           <h6>Contacto</h6>
           <span>+598 99 555 323</span>
-          <span>jardineriabazzano@gmail.com</span>
+          <span>bazzano.jardines@gmailcom</span>
         </div>
         <div className="footer-section">
           <h6>Servicios</h6>
@@ -26,13 +26,19 @@ export default function Footer() {
             <span onClick={() => handleClick("/empresas")}>Empresas</span>
           </div>
           <div className="footer-service-section">
-            <span>Mantenimiento</span>
+            <span onClick={() => handleClick("/mantenimiento")}>
+              Mantenimiento
+            </span>
           </div>
           <div className="footer-service-section">
-            <span>Poda de arboles y arbustos</span>
+            <span onClick={() => handleClick("/podas")}>
+              Poda de arboles y arbustos
+            </span>
           </div>
           <div className="footer-service-section">
-            <span>Limpieza de terrenos</span>
+            <span onClick={() => handleClick("/limpieza")}>
+              Limpieza de terrenos
+            </span>
           </div>
         </div>
         <div className="footer-section">
@@ -48,7 +54,6 @@ export default function Footer() {
             >
               <img className="footer-img" src="instagram.svg" alt="" />
             </a>
-            <img className="footer-img" src="facebook.svg" alt="" />
           </div>
         </div>
       </div>

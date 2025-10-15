@@ -5,6 +5,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import History from "./pages/History.jsx";
 import Empresas from "./pages/Empresas.jsx";
+import Mantenimiento from "./pages/Mantenimiento.jsx";
+import Podas from "./pages/Podas.jsx";
+import Limpieza from "./pages/Limpieza.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +21,18 @@ const router = createBrowserRouter([
   {
     path: "/empresas",
     element: <Empresas />,
+  },
+  {
+    path: "/mantenimiento",
+    element: <Mantenimiento />,
+  },
+  {
+    path: "/podas",
+    element: <Podas />,
+  },
+  {
+    path: "/limpieza",
+    element: <Limpieza />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(

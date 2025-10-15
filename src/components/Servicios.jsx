@@ -30,7 +30,7 @@ export default function Servicios() {
           <img
             ref={ref}
             className={`service-img animar ${visible ? "visible" : ""}`}
-            src="bordeadora.jpg"
+            src="nueva.jpg"
             alt=""
           />
         </div>
@@ -48,6 +48,7 @@ export default function Servicios() {
             }
           />
           <ItemService
+            ruta={"/mantenimiento"}
             img={"mantenimiento-icon.svg"}
             name={"Mantenimiento"}
             text={
@@ -55,6 +56,7 @@ export default function Servicios() {
             }
           />
           <ItemService
+            ruta={"/podas"}
             img={"poda-icon.svg"}
             name={"Poda de arboles y arbustos"}
             text={
@@ -62,6 +64,7 @@ export default function Servicios() {
             }
           />
           <ItemService
+            ruta={"/limpieza"}
             img={"limpieza-icon.svg"}
             name={"Limpieza de terrenos"}
             text={

@@ -13,7 +13,7 @@ export default function History() {
         <h2>Cuidamos cada espacio verdes con compromiso</h2>
         <div className="section-history">
           <div>
-            <img className="history-img" src="historia.jpg" alt="" />
+            <img className="history-img" src="nueva2.jpg" alt="" />
           </div>
           <div className="text-history">
             <h4>Nuestra historia</h4>
